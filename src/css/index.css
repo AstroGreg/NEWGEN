@@ -3,13 +3,124 @@ body {
   margin: auto;
   padding: 2rem;
   color: black;
-  background-color: black;
 }
-
+/*
+   ---------------
+   CONTAINERS
+   _______________
+ */
 .container{
-  margin: 0;
   padding: 0;
   width: 80%;
-  background-color: white;
   display: flex;
+  background-color: white;
+
+  /*center*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  /* */
+  box-shadow: 0px 24px 38px 3px rgba(0,0,0,0.14) , 0px 9px 46px 8px rgba(0,0,0,0.12) , 0px 11px 15px -7px rgba(0,0,0,0.2)
+
 }
+.rightcontainer{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.leftcontainer{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  object-fit: cover;
+
+}
+/*
+   ---------------
+   CONTAINER CHILDREN
+   _______________
+ */
+.topdecoration p{
+  float: right;
+  margin: 5% 15% 5% 10%;
+  font-size: 2em;
+}
+.Login{
+  margin-right: 15%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.Alternative {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  font-size: 2em;
+}
+
+/*
+   ---------------
+   LOGIN
+   ---------------
+ */
+
+.Login h1 {
+  font-family: Avenir, serif;
+  text-transform: capitalize;
+  font-size: 4em;
+  margin-bottom: 2%;
+}
+.Login p {
+  font-family: Avenir, Book, sans-serif;
+  font-size: 2em;
+  margin-bottom: 10%;
+  color: #707070;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+   ---------------
+   FORM
+   ---------------
+ */
+.input:hover {
+  box-shadow:0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2);
+  border-left: 0.5em solid black;
+  margin-bottom: 1em;
+  opacity: 1;
+}
+.input {
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+  margin-bottom: 1em;
+  opacity: 0.2;
+}
+#active p , .input p{
+  margin-left: 1em;
+}
+.submitdiv{
+
+}
+.submit{
+  border: none;
+  background-color: transparent;
+  float: right;
+  font-size: 2em;
+  margin: 5% 0% 20% 0%;
+}
+.input input , #active input{
+  border: none;
+
+}
+
+
+
+
